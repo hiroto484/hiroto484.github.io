@@ -2,7 +2,14 @@
   "name": "stuttering-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hiroto.github.io/stuttering-app",
+  "homepage": "https://hiroto484.github.io",
+  "license": "MIT",
+  "description": "A support application for people who stutter, providing recording, practice, and learning features.",
+  "author": "StutterCare",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiroto484/hiroto484.github.io.git"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -25,7 +32,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && rm -rf docs && mv build docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
